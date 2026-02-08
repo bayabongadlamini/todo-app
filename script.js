@@ -73,7 +73,7 @@ function deleteTask(index) {
 }
 
 function clearAll() {
-    if (confirm("Clear all tasks?")) {
+    if (confirm("Are you sure you want to clear all tasks?")) {
         localStorage.removeItem("tasks");
         loadTasks();
     }
